@@ -1,7 +1,7 @@
-# hyperf mongodb pool
+# qianlong hyperf mongodb pool
 
 ```
-composer require yumufeng/hyperf-mongodb
+composer require qianlong/mongodb
 ```
 
 ## config 
