@@ -1,7 +1,7 @@
 <?php
 
 
-namespace Hyperf\Mongodb\Pool;
+namespace Qianlong\Mongodb\Pool;
 
 
 use Hyperf\Di\Container;

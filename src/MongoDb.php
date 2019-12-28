@@ -1,16 +1,16 @@
 <?php
 
 
-namespace Hyperf\Mongodb;
+namespace Qianlong\Mongodb;
 
 
-use Hyperf\Mongodb\Exception\MongoDBException;
-use Hyperf\Mongodb\Pool\PoolFactory;
+use Qianlong\Mongodb\Exception\MongoDBException;
+use Qianlong\Mongodb\Pool\PoolFactory;
 use Hyperf\Utils\Context;
 
 /**
  * Class MongoDb
- * @package Hyperf\Mongodb
+ * @package Qianlong\Mongodb
  */
 class MongoDb
 {

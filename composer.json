@@ -1,35 +1,35 @@
 {
-  "name": "yumufeng/hyperf-mongodb",
-  "version": "1.0.0",
+  "name": "qianlong/mongodb",
+  "version": "1.1.0",
   "authors": [
     {
-      "name": "yumufeng",
-      "email": "admin@yumufeng.com"
+      "name": "qianlong",
+      "email": "838808603@qq.com"
     }
   ],
   "require": {
     "php": ">=7.2",
     "psr/container": "^1.0",
-    "hyperf/pool": "^1.0",
-    "hyperf/contract": "~1.0.0",
-    "hyperf/utils": "~1.0.0"
+    "hyperf/pool": "^1.1",
+    "hyperf/contract": "~1.1",
+    "hyperf/utils": "~1.1"
   },
   "require-dev": {
-    "hyperf/di": "~1.0.0"
+    "hyperf/di": "~1.1"
   },
   "autoload": {
     "psr-4": {
-      "Hyperf\\Mongodb\\": "src/"
+      "Qianlong\\Mongodb\\": "src/"
     },
     "files": [
     ]
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "1.0-dev"
+      "dev-master": "1.1-dev"
     },
     "hyperf": {
-      "config": "Hyperf\\Mongodb\\ConfigProvider"
+      "config": "Qianlong\\Mongodb\\ConfigProvider"
     }
   },
   "repositories": {

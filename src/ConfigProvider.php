@@ -1,9 +1,9 @@
 <?php
 
 
-namespace Hyperf\Mongodb;
+namespace Qianlong\Mongodb;
 
-use Hyperf\Mongodb\MongoDb;
+use Qianlong\Mongodb\MongoDb;
 
 class ConfigProvider
 {

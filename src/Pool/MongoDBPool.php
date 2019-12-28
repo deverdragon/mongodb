@@ -1,10 +1,10 @@
 <?php
 
-namespace Hyperf\Mongodb\Pool;
+namespace Qianlong\Mongodb\Pool;
 
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
-use Hyperf\Mongodb\MongoDbConnection;
+use Qianlong\Mongodb\MongoDbConnection;
 use Hyperf\Pool\Pool;
 use Hyperf\Utils\Arr;
 use Psr\Container\ContainerInterface;

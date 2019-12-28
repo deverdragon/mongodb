@@ -1,6 +1,6 @@
 <?php
 
-namespace Hyperf\Mongodb\Exception;
+namespace Qianlong\Mongodb\Exception;
 
 class MongoDBException extends \Exception
 {

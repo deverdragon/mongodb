@@ -1,9 +1,9 @@
 <?php
 
-namespace Hyperf\Mongodb;
+namespace Qianlong\Mongodb;
 
 use Hyperf\Contract\ConnectionInterface;
-use Hyperf\Mongodb\Exception\MongoDBException;
+use Qianlong\Mongodb\Exception\MongoDBException;
 use Hyperf\Pool\Connection;
 use Hyperf\Pool\Exception\ConnectionException;
 use Hyperf\Pool\Pool;
