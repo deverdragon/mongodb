@@ -2,7 +2,12 @@
 
 ```
 composer require qianlong/mongodb
+composer require qianlong/mongodb:dev-master
 ```
+
+# 说明
+
+本包默认mongodb的主键_id均为字符串
 
 ## config 
 在/config/autoload目录里面创建文件 mongodb.php
@@ -34,7 +39,7 @@ return [
 # 使用案例
 
 使用注解，自动加载 
-**\Hyperf\Mongodb\MongoDb** 
+**\Qianlong\Mongodb\MongoDb** 
 ```php
 /**
  * @Inject()
@@ -105,6 +110,13 @@ $this->$mongoDbClient->delete('fans',$where,$all);
 ```php
 $filter = ['isGroup' => "0", 'wechat' => '15584044700'];
 $count = $this->$mongoDbClient->count('fans', $filter);
+```
+
+### sum求和
+
+```php
+$filter = ['time' => '15584044700'];
+$count = $this->$mongoDbClient->sum('fans','money', $filter);
 ```
 
 

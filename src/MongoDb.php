@@ -205,6 +205,26 @@ class MongoDb
             throw new MongoDBException($e->getFile() . $e->getLine() . $e->getMessage());
         }
     }
+    /**
+     * 返回collection中满足条件的和
+     *
+     * @param string $namespace
+     * @param array $filter
+     * @return bool
+     * @throws MongoDBException
+     */
+    public function sum(string $namespace, string $field, array $filter = [])
+    {
+        try {
+            /**
+             * @var $collection MongoDBConnection
+             */
+            $collection = $this->getConnection();
+            return $collection->sum($namespace, $filter, $field);
+        } catch (\Exception $e) {
+            throw new MongoDBException($e->getFile() . $e->getLine() . $e->getMessage());
+        }
+    }
 
 
     /**
@@ -249,5 +269,4 @@ class MongoDb
     {
         return sprintf('mongodb.connection.%s', $this->poolName);
     }
-
 }
